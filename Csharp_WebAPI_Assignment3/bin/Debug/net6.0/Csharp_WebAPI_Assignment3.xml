@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Csharp_WebAPI_Assignment3</name>
+    </assembly>
+    <members>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.CharactersController.GetCharacters">
+            <summary>
+            Gets all Characters from the DB.
+            </summary>
+            <returns>IEnumerable of Character DTOs</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.CharactersController.GetCharacter(System.Int32)">
+            <summary>
+            Gets a character from the DB by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>A Character Dto object.</returns>
+            /// <response code="200">Successfully returns a character dto object.</response>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.CharactersController.PutCharacter(System.Int32,Csharp_WebAPI_Assignment3.DTOs.CharacterDTOs.CharacterUpdateDTO)">
+            <summary>
+            Updates a character in the DB by ID.
+            </summary>
+            <param name="id"></param>
+            <param name="characterDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.CharactersController.PostCharacter(Csharp_WebAPI_Assignment3.DTOs.CharacterDTOs.CharacterCreateDTO)">
+            <summary>
+            Posts a character create DTO object in the DB.
+            </summary>
+            <param name="characterDto"></param>
+            <returns>Character read DTO object.</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.FranchisesController.GetFranchises">
+            <summary>
+            Gets all franchises from the DB.
+            </summary>
+            <returns>IEnumerable of Franchise DTOs.</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.FranchisesController.GetFranchise(System.Int32)">
+            <summary>
+            Gets a franchise from the DB by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>A Franchise Dto object.</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.FranchisesController.PutFranchise(System.Int32,Csharp_WebAPI_Assignment3.DTOs.FranchiseDTOs.FranchiseUpdateDTO)">
+            <summary>
+            Updates a franchise in the DB by ID.
+            </summary>
+            <param name="id"></param>
+            <param name="franchiseDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.FranchisesController.PostFranchise(Csharp_WebAPI_Assignment3.DTOs.FranchiseDTOs.FranchiseCreateDTO)">
+            <summary>
+            Posts a franchise create DTO object in the DB.
+            </summary>
+            <param name="franchiseDto"></param>
+            <returns>Franchise read DTO object.</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.FranchisesController.DeleteFranchise(System.Int32)">
+            <summary>
+            Deletes a franchise from the DB.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.MoviesController.GetMovies">
+            <summary>
+            Gets all movies from the DB.
+            </summary>
+            <returns>IEnumerable of Movie DTOs (no releasedates)</returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.MoviesController.GetMovie(System.Int32)">
+            <summary>
+            Gets a movie from the DB by ID.
+            </summary>
+            <param name="id">ID of the movie you want to get.</param>
+            <returns>A Movie Dto object. (no releasedate)</returns>
+            <response code="200">Successfully returns a movie dto object.</response>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.MoviesController.PutMovie(System.Int32,Csharp_WebAPI_Assignment3.DTOs.MovieDTOs.MovieUpdateDTO)">
+            <summary>
+            Updates a movie in the DB by ID.
+            </summary>
+            <param name="id"></param>
+            <param name="movieDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Csharp_WebAPI_Assignment3.Controllers.MoviesController.PostMovie(Csharp_WebAPI_Assignment3.DTOs.MovieDTOs.MovieCreateDTO)">
+            <summary>
+            Posts a movie create DTO object in the DB.
+            </summary>
+            <param name="movieDto"></param>
+            <returns>Movie read DTO object.</returns>
+        </member>
+    </members>
+</doc>
