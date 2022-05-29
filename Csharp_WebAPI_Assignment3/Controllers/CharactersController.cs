@@ -132,6 +132,11 @@ namespace Csharp_WebAPI_Assignment3.Controllers
         }
 
         // DELETE: api/Characters/5
+        /// <summary>
+        /// Deletes a character from the DB.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCharacter(int id)
         {

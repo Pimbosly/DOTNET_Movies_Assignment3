@@ -133,6 +133,11 @@ namespace Csharp_WebAPI_Assignment3.Controllers
         }
 
         // DELETE: api/Movies/5
+        /// <summary>
+        /// Deletes a movie from the DB.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
